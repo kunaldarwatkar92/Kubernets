@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service 
+metadata:
+  name: myclustersvc
+spec:
+  selector:
+    app.kubernetes.io/name : mysvccluster
+  ports: 
+    - protocol: TCP
+      port: 80 
+      targetPort: 80
