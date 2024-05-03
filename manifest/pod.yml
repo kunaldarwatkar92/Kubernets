@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: newpod
+  labels:
+    role: newpod
+spec:
+  containers:
+    - name: con1
+      image: nginx
+      ports:
+        - name: clustar-pord
+          containerPort: 80
+          protocol: TCP
